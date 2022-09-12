@@ -1,0 +1,31 @@
+# This is a sample command please replace with correct command
+spring:
+  datasource:
+    url: jdbc:postgresql://***.**.**.***:5432/db_dev
+    username: username
+    password: password
+    hikari:
+      schema: schema
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+jwt:
+  token:
+    validity: 18000
+    prefix: Bearer
+  signing:
+    key: signingkey
+  authorities:
+    key: roles
+  header:
+    string: Authorization
+
+server:
+  port: 8082
+  error:
+    include-message: always
+
+intermediary:
+  id: "10"
+  code: "TEST"
